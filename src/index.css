@@ -1,0 +1,56 @@
+:root {
+  --body-background: #0b0b0b;
+  --text-color: white;
+}
+
+[theme="light"] {
+  --body-background: white;
+  --text-color: black;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--text-color);
+  font-family: 'Outfit';
+  transition: 0.5s;
+}
+
+input{
+  color: var(--text-color);
+}
+.mode_ch p,
+.mode_ch h3,
+.mode_ch a{
+  color: var(--text-color);
+}
+.mode_ch.light h3{
+color: black;
+}
+.mode_ch.light .border_set {
+  color: #000;
+  border: 2px solid black;
+}
+
+.border_set {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+.mode_ch.light .border_set:hover{
+  border: 2px solid #B415FF;
+}
+.mode_ch.light .html,
+.mode_ch.light .css,
+.mode_ch.light .js,
+.mode_ch.light .java,
+.mode_ch.light .mongodb,
+.mode_ch.light .node,
+.mode_ch.light .react,
+.mode_ch.light .bootstrap,
+.mode_ch.light .springboot,
+.mode_ch.light .express {
+  filter: invert(0);
+}
+
+.mode_ch.light .nav_ch img{
+  mix-blend-mode:hue;
+}
